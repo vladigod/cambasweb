@@ -3,170 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo Canvas - Asesoramiento Tecnológico para Adultos</title>
+    <title>Asesoramiento Tecnológico para Adultos Mayores</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            background-color: #f0f8ff; /* Fondo azul claro */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
+
         header {
-            background: #50b3a2;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            background-color: #6495ed; /* Azul más oscuro para el encabezado */
+            color: white;
+            padding: 1em 0;
             text-align: center;
         }
-        header h1 {
-            text-transform: uppercase;
-            margin: 0;
-            font-size: 24px;
-        }
+
         header img {
-            margin-top: 10px;
+            display: block;
+            margin: 0.5em auto;
             width: 200px;
             height: 200px;
         }
+
         header p {
-            margin-top: 10px;
-            font-size: 16px;
+            font-size: 1.2em;
             font-style: italic;
         }
-        section {
-            padding: 20px;
-            background: #fff;
-            margin-top: 10px;
-            border: #ccc 1px solid;
-            border-radius: 10px;
-        }
-        section h2 {
-            color: #333;
-            border-bottom: #e8491d 2px solid;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: none;
+
+        nav ul {
+            list-style-type: none;
             padding: 0;
         }
-        ul li {
-            background: #f4f4f4;
-            margin: 5px 0;
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 2em;
+        }
+
+        section {
+            margin: 2em 0;
+            background-color: white; /* Fondo blanco para las secciones */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #6495ed; /* Color azul para los títulos */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
             padding: 10px;
-            border-left: #50b3a2 5px solid;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #6495ed; /* Color azul para el botón */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #4169e1; /* Azul más oscuro al pasar el cursor */
+        }
+
         footer {
-            background: #50b3a2;
-            color: #fff;
+            background-color: #6495ed; /* Azul para el pie de página */
+            color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            border-top: #e8491d 3px solid;
-        }
-        footer p {
-            margin: 5px 0;
+            padding: 1em 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Modelo Canvas - Asesoramiento Tecnológico para Adultos</h1>
+        <h1>Asesoramiento Tecnológico para Adultos Mayores</h1>
         <img src="logo.jpg" alt="Logo">
         <p>“Rompiendo barreras digitales: Capacitando a los adultos mayores para usar la tecnología con confianza.”</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <section>
-            <h2>Segmentos de Clientes</h2>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenidos</h2>
+            <p>En nuestra organización, nos dedicamos a proporcionar asesoramiento y apoyo tecnológico a los adultos mayores, ayudándolos a mantenerse conectados y aprovechar las ventajas de la tecnología moderna.</p>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
             <ul>
-                <li>Adultos de 40 a 65 años de edad.</li>
-                <li>Escaso conocimiento sobre tecnología.</li>
-                <li>Nivel educativo básico (primaria/secundaria).</li>
-                <li>Nivel económico de bajo a medio alto.</li>
-                <li>Dificultades al usar dispositivos inteligentes.</li>
+                <li>Introducción al uso de smartphones y tablets</li>
+                <li>Tutoriales de uso de aplicaciones de mensajería y redes sociales</li>
+                <li>Configuración y seguridad de dispositivos</li>
+                <li>Acceso a servicios en línea (bancos, citas médicas, etc.)</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Propuesta de Valor</h2>
-            <ul>
-                <li>Simplicidad y comodidad: Ofrecemos la conveniencia de recibir asesoramiento tecnológico personalizado en la comodidad de su hogar.</li>
-                <li>Personalización y adaptación: Proporcionamos soluciones adaptadas a las necesidades individuales de cada cliente.</li>
-                <li>Confianza y tranquilidad: Inspira confianza en los adultos al ofrecerles la tranquilidad de saber que tienen acceso a expertos en tecnología y que podemos ayudarles en cualquier momento.</li>
-                <li>Empoderamiento y autonomía: Ayuda a los adultos a sentirse más seguros y capacitados en el uso de la tecnología, lo que les permite aprovechar al máximo las herramientas digitales disponibles en su vida diaria.</li>
-            </ul>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de profesionales dedicados a brindar educación y apoyo tecnológico a los adultos mayores. Nuestro objetivo es empoderar a nuestros usuarios para que puedan aprovechar al máximo las herramientas digitales.</p>
         </section>
 
-        <section>
-            <h2>Canales de Distribución</h2>
-            <ul>
-                <li>Plataforma en línea: Utilizar plataformas de videoconferencia como Zoom, Google Meet para impartir clases en línea.</li>
-                <li>Visitas a domicilio: Ofrecemos la opción de realizar visitas personalizadas a domicilio, donde se pueda brindar asesoramiento tecnológico directamente en el hogar del cliente.</li>
-                <li>Clases en grupos pequeños: Organizamos sesiones de clases en grupos pequeños, ya sea en un espacio físico dedicado o en línea. Esto permite a los adultos aprender en un entorno colaborativo, compartir experiencias y recibir apoyo de sus compañeros mientras adquieren nuevas habilidades tecnológicas.</li>
-            </ul>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
+    </main>
 
-        <section>
-            <h2>Relaciones con los Clientes</h2>
-            <ul>
-                <li>Atención personalizada: Brindar asesoramiento técnico adaptado a las necesidades individuales de cada cliente.</li>
-                <li>Mantenimiento proactivo: Ofrecer seguimiento continuo y actualizaciones tecnológicas para garantizar la satisfacción a largo plazo.</li>
-                <li>Educación y capacitación: Proporcionar recursos y programas de formación para empoderar a los clientes en el uso efectivo de la tecnología.</li>
-                <li>Soporte multicanal: Estar disponible a través de diversos medios de comunicación para resolver consultas y problemas de manera rápida y eficiente.</li>
-                <li>Construcción de confianza: Establecer relaciones sólidas basadas en la confianza y la transparencia para fomentar la lealtad y la recomendación.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Fuentes de Ingresos</h2>
-            <ul>
-                <li>Honorarios por servicios de asesoramiento tecnológico a adultos.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Actividades Clave</h2>
-            <ul>
-                <li>Asesoramiento técnico personalizado para adultos.</li>
-                <li>Desarrollo de soluciones tecnológicas adaptadas a las necesidades de los clientes.</li>
-                <li>Capacitación y educación tecnológica para adultos.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Recursos Clave</h2>
-            <ul>
-                <li>Equipo de personas en sistemas y tecnología.</li>
-                <li>Plataformas de comunicación y colaboración online.</li>
-                <li>Herramientas de análisis y diagnóstico tecnológico.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Asociaciones Clave</h2>
-            <ul>
-                <li>Alianzas con centros comunitarios.</li>
-                <li>Colaboración con instituciones educativas para programas de capacitación.</li>
-                <li>Asociación con empresas de tecnología para acceso a herramientas y recursos.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Estructura de Costos</h2>
-            <ul>
-                <li>Salarios del personal técnico.</li>
-                <li>Costos de marketing y publicidad.</li>
-                <li>Gastos en tecnología y herramientas de análisis.</li>
-            </ul>
-        </section>
-    </div>
     <footer>
+        <p>&copy; 2024 Asesoramiento Tecnológico para Adultos Mayores. Todos los derechos reservados.</p>
         <p>Teléfonos:</p>
         <p>2294090677</p>
         <p>2293722645</p>
@@ -175,3 +169,4 @@
     </footer>
 </body>
 </html>
+
